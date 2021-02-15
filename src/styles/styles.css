@@ -1,0 +1,17 @@
+.flex-page{
+    display :flex;
+    background-color: bisque;
+    text-align: center;
+    width: 80%;
+    flex-direction: row;
+}
+
+.hook{
+    flex : 50%;
+    background-color: coral;
+}
+
+.arrow{
+    flex : 50%;
+    background-color: darkgrey;
+}
