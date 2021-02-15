@@ -97,3 +97,13 @@
     display: flex;
 }
 
+.footer{
+    grid-area:footer;
+    background: #e6e6fa;
+}
+
+.footer h3{
+    font-size: 14px;
+    color: #468499;
+}
+

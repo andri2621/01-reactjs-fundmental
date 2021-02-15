@@ -1,10 +1,21 @@
 import React from 'react';
 import './MainLayout.css';
+import AppNavBar from './AppNavbar';
+import SideBar from './Sidebar';
+import Home from './Home';
+import Footer from './Footer';
+import SidebarMenu from '../data/SidebarMenu';
 
 const MainLayout = () => {
     return (
         <div className="container">
-            <div className="nav-top">
+
+            <AppNavBar />
+            <SideBar menus ={SidebarMenu}/>
+            <Home/>
+            <Footer/>
+
+           {/*  <div className="nav-top">
                 <ul>
                     <li className="logo"><a><img src="./assets/images/codeid.png" /></a></li>
                     <li><a href="/home">Home</a></li>
@@ -29,7 +40,7 @@ const MainLayout = () => {
                 <h3>&copy; CodeId Academy
                 {(new Date()).getFullYear()}
                 </h3>
-            </div>
+            </div> */}
 
 
 
