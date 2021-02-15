@@ -4,14 +4,11 @@ import './styles/styles.css';
 import Counter from './components/Counter'
 import CounterArrow from './components/CounterArrow'
 import CounterHook from './components/CounterHook'
+import MainLayout from './containers/MainLayout'
 
 function App() {
   return (
-    <div className="flex-page">
-      <div className="hook"><CounterHook/></div>
-      <div className="arrow"><CounterArrow/></div>
-      
-    </div>
+    <MainLayout></MainLayout>
   );
 }
 
