@@ -12,9 +12,8 @@ import AppLayout from './containers/AppLayout'
 function App() {
   return (
     <BrowserRouter>
-        <AppLayout />
+        <MainLayout />
       </BrowserRouter>
-
   );
 }
 
