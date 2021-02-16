@@ -10,6 +10,7 @@ import CounterArrow from '../components/CounterArrow';
 import List from '../components/List'
 import Error404 from '../components/Error404';
 import { countries } from '../data/datas';
+import ListMovies from '../components/ListMovies';
 
 const MainLayout = () => {
     return (
@@ -26,6 +27,9 @@ const MainLayout = () => {
                     <Route path="/counter" component={CounterArrow} exact />
                     <Route path="/list" exact >
                         <List data={countries} filterId="Garu"/>
+                    </Route>
+                    <Route path="/movies" exact >
+                        <ListMovies/>
                     </Route>
                     <Route component={Error404} />
 

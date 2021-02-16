@@ -15,13 +15,20 @@ const SidebarMenu = [
     },
     {
         id: 3,
+        path: '/movies',
+        exact: true,
+        name: 'Gallery Movie',
+        component: null
+    },
+    {
+        id: 4,
         path: '/todo',
         exact: true,
         name: 'Todo',
         component: null
     },
     {
-        id: 4,
+        id: 5,
         path: '/form',
         exact: true,
         name: 'Form Input',
