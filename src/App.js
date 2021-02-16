@@ -5,10 +5,15 @@ import Counter from './components/Counter'
 import CounterArrow from './components/CounterArrow'
 import CounterHook from './components/CounterHook'
 import MainLayout from './containers/MainLayout'
+import { BrowserRouter } from 'react-router-dom';
+
 
 function App() {
   return (
-    <MainLayout></MainLayout>
+    <BrowserRouter>
+        <MainLayout />
+      </BrowserRouter>
+
   );
 }
 
