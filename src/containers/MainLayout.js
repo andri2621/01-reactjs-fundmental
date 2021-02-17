@@ -11,6 +11,7 @@ import List from '../components/List'
 import Error404 from '../components/Error404';
 import { countries } from '../data/datas';
 import ListMovies from '../components/ListMovies';
+import {Student, Teacher} from '../components/Student';
 
 const MainLayout = () => {
     return (
@@ -30,6 +31,9 @@ const MainLayout = () => {
                     </Route>
                     <Route path="/movies" exact >
                         <ListMovies/>
+                    </Route>
+                    <Route path="/student" exact >
+                        <Student nim="912" nama="Andi"/>
                     </Route>
                     <Route component={Error404} />
 

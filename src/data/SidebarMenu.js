@@ -7,6 +7,13 @@ const SidebarMenu = [
         component: null
     },
     {
+        id: 10,
+        path: '/student',
+        name : 'Student',
+        exact: true,
+        component: null
+    },
+    {
         id: 2,
         path: '/list',
         name: 'List',
