@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import uuidv4 from 'uuid/v4';
-import { PageWrap, ContentArea, Button, ActionButton, ButtonArea, FormArea, TableArea } from './Styling';
+import { PageWrap, ContentArea, FormArea, TableArea } from './Styling';
 import { TableMovie, FormEntry,EditFormEntry } from './MoviesComponent';
 
 const MoviesCrud = () => {

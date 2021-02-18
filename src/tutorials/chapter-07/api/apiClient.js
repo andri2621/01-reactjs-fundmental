@@ -9,5 +9,5 @@ function getGenreDesc(dataGenre,genreIds) {
 
     return genreDesc;
 }
-
+ 
 export { getGenreDesc }

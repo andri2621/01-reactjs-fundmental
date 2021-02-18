@@ -57,6 +57,8 @@ export default class ListStudent extends Component {
                 </div>
                 <div>
                 {
+                  
+
                   !isSelected ? (
                     students
                     .filter( f => f.nama.toLowerCase().includes(search.toLowerCase()))
@@ -76,15 +78,18 @@ export default class ListStudent extends Component {
                         if (select === 'nama') {
                             return (''+a.nama).localeCompare(b.nama);
                         }
-                        if (select === 'ipk') {
+                        else if (select === 'ipk') {
                             return b.ipk - a.ipk;
                         }
-                        if (select === 'kota') {
+                        else if (select === 'kota') {
                             return (''+a.kota).localeCompare(b.kota);
                         }
-                        if (select === 'vote') {
+                        else if (select === 'vote') {
                             return b.vote - a.vote;
+                        }else{
+                            return (''+a.nama).localeCompare(b.nama);
                         }
+                        
                     })
                     .map(value =>{
                         return ( <Student 

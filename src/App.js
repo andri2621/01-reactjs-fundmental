@@ -9,13 +9,15 @@ import CounterHook from './components/CounterHook'
 import MainLayout from './containers/MainLayout'
 import { BrowserRouter } from 'react-router-dom';
 import AppLayout from './containers/AppLayout'
+//import StudentProvider from './context/StudentProvider'
 
 
 function App() {
   return (
-    <BrowserRouter>
-        <MainLayout /> 
+      <BrowserRouter>
+        <MainLayout />
       </BrowserRouter>
+  
   );
 }
 

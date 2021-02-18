@@ -13,6 +13,9 @@ import { countries } from '../data/datas';
 import ListMovies from '../components/ListMovies';
 //import {Student, Teacher} from '../components/Student';
 import ListStudent from '../quiz/ListStudent';
+import { Student } from '../context/Student';
+import StudentProvider from '../context/StudentProvider'
+import Regions from '../crud/Regions';
 
 
 const MainLayout = () => {
@@ -29,13 +32,19 @@ const MainLayout = () => {
                     <Route path="/" component={Home} exact />
                     <Route path="/counter" component={CounterArrow} exact />
                     <Route path="/list" exact >
-                        <List data={countries} filterId="Garu"/>
+                        <List data={countries} filterId="Garu" />
                     </Route>
                     <Route path="/movies" exact >
-                        <ListMovies/>
+                        <ListMovies />
                     </Route>
                     <Route path="/student" exact >
-                        <ListStudent/>
+                        <StudentProvider>
+                            <Student />
+                        </StudentProvider>
+
+                    </Route>
+                    <Route path="/regions" exact >
+                        <Regions/>
                     </Route>
                     <Route component={Error404} />
 
