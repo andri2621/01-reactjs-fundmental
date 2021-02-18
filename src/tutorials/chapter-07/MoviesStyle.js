@@ -87,7 +87,7 @@ export const BoxPoster = styled.div`
 	}
 `;
 
-export const BoxGenre = styled.div`
+export const Box = styled.div`
 	flex: 55%;
     width: 100%;
 	display: inline-flex;
