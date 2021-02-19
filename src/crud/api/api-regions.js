@@ -11,4 +11,13 @@ const listRegion = async () => {
       }
 };
 
-export {listRegion}
+const create = async () => {
+  try {
+      let response = await axios.post(`${apiURL}/regions/`)
+      return await response.data
+    } catch(err) {
+      return await err.message
+    }
+};
+
+export {listRegion,create}
