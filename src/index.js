@@ -1,6 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './styles/tailwind.css';
+/* import './index.css';
+import './App.css';
+import './styles/styles.css';
+import './styles/Movie.css';
+import './styles/Rating.css'; */
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';

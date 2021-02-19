@@ -1,33 +1,39 @@
 import React, { Component } from 'react'
 import { listRegion } from './api/api-regions';
+import {TableRegion, AddEditForm} from './RegionComponent'
 
 export default class Regions extends Component {
     state = {
-        regions: []
+        regions: [],
+        isModalShow : false
     }
 
     componentDidMount() {
         this.showListRegion();
-       
+
     }
 
-    showListRegion =()=> {
-        listRegion().then(data =>{
+    showListRegion = () => {
+        listRegion().then(data => {
             this.setState({
-                regions : data
+                regions: data
             })
         })
     };
 
+    onShowModal=(value)=>{
+        this.setState({
+            isModalShow : value
+        })
+    }
+
     render() {
-        const { regions } = this.state;
+        const { regions,isModalShow } = this.state;
         return (
             <>
-                <h1>Region List</h1>
+                <TableRegion regions = {regions} setShowModal={this.onShowModal}></TableRegion>
                 {
-                    regions.map(el => {
-                        return (<h1>{el.region_id}</h1>)
-                    })
+                    (isModalShow ? (<AddEditForm setShowModal={this.onShowModal}/>) : null)
                 }
             </>
         )
